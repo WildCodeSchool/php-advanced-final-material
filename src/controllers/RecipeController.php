@@ -31,6 +31,8 @@ class RecipeController
 
     public function add(): void
     {
+        $errors = [];
+
         if ($_SERVER["REQUEST_METHOD"] === 'POST') {
             $recipe = array_map('trim', $_POST);
             $errors = $this->validate($recipe);
