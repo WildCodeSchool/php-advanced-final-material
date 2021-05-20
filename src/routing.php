@@ -2,8 +2,6 @@
 
 require __DIR__.'/controllers/RecipeController.php';
 
-use controllers\RecipeController;
-
 $urlPath = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 
 if ('/' === $urlPath) {
