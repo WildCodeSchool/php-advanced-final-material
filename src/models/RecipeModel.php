@@ -1,8 +1,5 @@
 <?php
 
-namespace models;
-
-use \PDO;
 
 class RecipeModel
 {
@@ -10,7 +7,7 @@ class RecipeModel
 
     public function __construct()
     {
-        $this->connection = new PDO("mysql:host=" . SERVER . ";dbname=" . DATABASE . ";charset=utf8", USER, PASSWORD);
+        $this->connection = new \PDO("mysql:host=" . SERVER . ";dbname=" . DATABASE . ";charset=utf8", USER, PASSWORD);
     }
 
     public function getAll(): array

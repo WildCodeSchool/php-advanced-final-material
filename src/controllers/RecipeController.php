@@ -1,10 +1,7 @@
 <?php
 
-namespace controllers;
+require_once __DIR__ . '/../models/RecipeModel.php';
 
-require __DIR__ . '/../models/RecipeModel.php';
-
-use models\RecipeModel;
 
 class RecipeController
 {
